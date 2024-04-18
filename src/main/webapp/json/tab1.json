@@ -1,0 +1,38 @@
+[
+    {
+        "imgUrl": "https://img.dogpre.com/mobile/dogpre/product/90/89793_list_L1_01915043.png",
+        "name": "츄통령",
+        "intro": "츄통령 바삭츄 동결건조 복어 대용량 75g",
+        "saleLogo": "강대할인가",
+        "originalPrice": "20,000원",
+        "discountRate": "34%",
+        "realPrice": "13,900원"
+    },
+    {
+        "imgUrl": "https://img.dogpre.com/mobile/dogpre/product/83/82075_list_L1_01105850.png",
+        "name": "츄통령",
+        "intro": "츄통령 바삭츄 동결건조 열빙어 65g",
+        "saleLogo": "강대할인가",
+        "originalPrice": "8,000원",
+        "discountRate": "20%",
+        "realPrice": "6,400원"
+    },
+    {
+        "imgUrl": "https://img.dogpre.com/mobile/dogpre/product/88/87028_list_L1_01764881.png",
+        "name": "츄통령",
+        "intro": "츄통령 멍츄 칠면조힘줄 스틱 100g",
+        "saleLogo": "강대할인가",
+        "originalPrice": "10,500원",
+        "discountRate": "15%",
+        "realPrice": "8,925원"
+    },
+    {
+        "imgUrl": "https://img.dogpre.com/mobile/dogpre/product/87/86135_list_L1_01396728.png",
+        "name": "츄통령",
+        "intro": "츄통령 멍츄 한우 불리스틱 소형 35g",
+        "saleLogo": "강대할인가",
+        "originalPrice": "15,000원",
+        "discountRate": "25%",
+        "realPrice": "11,250원"
+    }
+]

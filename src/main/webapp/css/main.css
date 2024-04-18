@@ -1,0 +1,897 @@
+	@charset "utf-8";
+
+	/*rest*/
+	* {
+		margin: 0;
+		box-sizing: border-box;
+		font-family: "맑은 고딕";
+	}
+
+	ul,
+	ol,
+	li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	/*main*/
+
+	header {
+		width: 1185px;
+		height: 80px;
+		margin: 0 auto;
+
+	}
+
+	.logo_con {
+		width: 280px;
+		height: 100px;
+
+	}
+
+	#logo {
+		width: 280px;
+		height: 100px;
+		position: relative;
+
+	}
+
+	#logo>img {
+		max-width: 280px;
+		max-height: 100px;
+	}
+
+	.search {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -165%);
+		width: 380px;
+		height: 46px;
+		margin-left: 5px;
+	}
+
+	.search>input {
+		width: 100%;
+		height: 45px;
+		border: 1px solid #bbb;
+		border-radius: 20px;
+		padding: 10px 12px;
+		font-size: 14px;
+		margin: 0px 0 0 0;
+		display: inline-block;
+	}
+
+	.search>img {
+		width: 17px;
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.login {
+		width: 440px;
+		height: 50px;
+		float: right;
+		margin: 15px 0 0 850px;
+		position: absolute;
+		transform: translateY(-150%);
+	}
+
+	.login>ul>li>p {
+		position: absolute;
+		margin: 35px 0 0 35px;
+	}
+
+	.login>ul {
+		font-size: 14px;
+		color: #666;
+	}
+
+	.login>ul>li {
+		float: left;
+		margin: 0 5px
+	}
+
+	.login>ul>li>a {
+		text-decoration: none;
+		color: #666;
+		padding: 10px;
+	}
+
+	.login>ul>li::after {
+		content: "|";
+		float: right;
+		display: block;
+	}
+	
+
+	.login>ul>li:last-child::after {
+		content: "";
+	}
+
+
+	.login_con {
+		font-family: arial;
+		font-size: 24px;
+		width: 476px;
+		height: 975px;
+		/* 자식 요소들의 높이에 여유를 더해 높이를 조정 */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	/* 아이디 입력란 및 비밀번호 입력란 스타일 */
+	.login_con input[type="text"],
+	.login_con input[type="password"] {
+		width: 444px;
+		height: 60px;
+		border: 1px solid #ccc;
+		/* 테두리 추가 */
+		border-radius: 5px;
+		/* 둥근 테두리 */
+		padding: 10px;
+		/* 내부 여백 */
+		font-size: 16px;
+		margin-bottom: 20px;
+		/* 아래 여백 추가 */
+		box-sizing: border-box;
+		/* 테두리와 내부 여백을 요소의 크기로 포함 */
+		outline: none;
+		/* 포커스 시 테두리 제거 */
+		transition: border-color 0.3s;
+		/* 테두리 색상 전환 효과 */
+	}
+
+	.login_con input[type="text"]:focus,
+	.login_con input[type="password"]:focus {
+		border-color: #007bff;
+		/* 포커스 시 테두리 색상 변경 */
+	}
+
+	.login_con input[type="submit"] {
+		width: 444px;
+		/* 버튼 스타일 추가 */
+		height: 60px;
+		font-size: 18px;
+		background-color: rgb(149, 35, 220);
+		/* 로그인 버튼 배경색 */
+		color: #fff;
+		/* 로그인 버튼 글자색 */
+		border: none;
+		border-radius: 25px;
+		cursor: pointer;
+		margin-right: 10px;
+		/* 오른쪽 여백 */
+		outline: none;
+		transition: background-color 0.3s;
+	}
+
+	.login_con input[type="submit"]:hover {
+		background-color: rgb(132, 35, 214);
+		/* 호버 시 배경색 변경 */
+	}
+
+	.login_con input[type="button"] {
+		width: 444px;
+		/* 버튼 스타일 추가 */
+		height: 60px;
+		font-size: 18px;
+		color: rgb(149, 35, 220);
+		/* 회원가입 버튼 글자색 */
+		background-color: #fff;
+		/* 회원가입 버튼 배경색 */
+		border: 1px solid rgb(149, 35, 220);
+		/* 테두리 추가 */
+		border-radius: 25px;
+		cursor: pointer;
+		margin-right: 10px;
+		/* 오른쪽 여백 */
+		outline: none;
+		transition: background-color 0.3s;
+	}
+
+	.login_con input[type="button"]:hover {
+		color: #0056b3;
+		/* 호버 시 글자색 변경 */
+	}
+
+
+
+
+	.img_con {
+		width: 444px;
+		height: 161px;
+		margin: 230px 0 0 50px;
+
+
+	}
+
+	.img_con img {
+		width: 100%;
+		margin-top: 20px;
+
+	}
+
+
+
+
+
+	.login_con>h3 {
+		text-align: center;
+	}
+
+	.login_con>form {
+		margin: 10px 0 0 50px;
+	}
+
+	#icon {
+		width: 300px;
+		height: 30px;
+		float: right;
+		margin: 0px 30px 0 0px;
+		position: relative;
+
+	}
+
+	.upicon1 {
+		float: left;
+		margin: 0 0 0 35px;
+		padding: 0px;
+		width: 40px;
+
+	}
+
+	.upicon1>img {
+		width: 100%;
+		height: 100%;
+
+	}
+
+	nav {
+		width: 1100px;
+		height: 20px;
+		float: left;
+		margin: 0px 0px 15px 150px;
+    	transform: translateY(-30px);
+
+	}
+
+	nav>ul {
+		font-size: 17px;
+		font-weight: bold;
+	}
+
+	nav>ul>li {
+		float: left;
+		margin: 0 10px 0 10px;
+		padding: 0;
+	}
+
+	nav>ul>li>a {
+		text-decoration: none;
+		color: #000;
+	}
+
+	nav>ul>li>a:hover {
+		color: red;
+	}
+
+	/* 캐러셀 전체 구조  */
+	.carousel_main {
+		width: 2000px;
+		/* 이미지 크기 설정  */
+		position: relative;
+		overflow: hidden;
+		margin: 10px auto;
+		user-select: none;
+	}
+
+	.carousel_wrapper {
+		display: flex;
+		transition: transform 0.3s;
+	}
+
+	.carousel_slide {
+		flex: 0 0 2000px;
+		/* 이미지 크기 설정  */
+		position: relative;
+		margin: 10px auto;
+
+	}
+
+	.carousel_slide img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	/* 캐러셀 사이드 버튼 */
+	.carousel_button_container {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+
+
+	}
+
+	.carousel_button {
+		width: 20px;
+		height: 20px;
+		color: #F2F2F2;
+		background: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+
+	.carousel_prev {
+		background-color: transparent;
+		color: #F2F2F2;
+		border: 0px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+
+	}
+
+	.carousel_next {
+		background-color: transparent;
+		color: #F2F2F2;
+		border: 0px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	/* 캐러셀 중앙 버튼 */
+	.carousel_pagination {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+
+	}
+
+	.carousel_circle {
+		width: 9px;
+		height: 9px;
+		background-color: #D8D8D8;
+		border-radius: 50%;
+		margin: 10px 5px;
+		cursor: pointer;
+	}
+
+	.carousel_circle.active {
+		background-color: #fff;
+	}
+
+
+	#category {
+		font: bold 17px "malgun gothic";
+		width: 140px;
+		height: 50px;
+		color: black;
+		line-height: 50px;
+		margin: 0 0 0 35px;
+		transform: translateY(-13px);
+		text-align: center;
+		position: absolute;
+		z-index: 999;
+	}
+
+	#category>ul>li {
+		float: left;
+		width: 140px;
+		position: relative;
+	}
+
+	#category>ul>li>ul {
+		width: 140px;
+		display: none;
+		position: absolute;
+		font-size: 17px;
+		background: white;
+		z-index: 10;
+		box-shadow: 0.8px 0.8px 0.8px 0.8px gray;
+	}
+
+	#category ul li a img {
+		width: 15px;
+		height: 11px;
+		margin-right : 5px;
+	}
+
+	#category>ul>a:hover {
+		color: purple;
+	}
+
+	#category>ul>li:hover>ul {
+		display: block;
+	}
+
+	section {
+		width: 1350px;
+		height: 200px;
+		margin: 10px auto;
+		display: flex;
+
+
+	}
+
+	.iconmenu {
+		margin: 40px 0 0 45px;
+		background: #E6E6E6;
+		width: 120px;
+		height: 90px;
+		border-radius: 40%;
+		text-align: center;
+		position: relative;
+
+	}
+
+	section p {
+		position: absolute;
+		margin: 15px 0px;
+		width: 100%;
+
+	}
+
+	.iconmenu img {
+
+		width: 75%;
+		height: 75%;
+		margin: 10px auto;
+
+
+	}
+
+	#mainad {
+		width: 1250px;
+		height: 148px;
+		margin: 40px auto;
+	}
+
+	#mainad img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.hotdeal_article {
+		width: 1200px;
+		height: 580px;
+		margin: 50px auto;
+		display: flex;
+
+	}
+
+	/* 핫딜 구간 */
+
+	.hotdeal_item {
+
+		width: 180px;
+		height: 252px;
+		margin: 50px 105px 0 20px;
+		float: left;
+
+	}
+
+	.img_container {
+		width: 280px;
+		height: 280px;
+		overflow: hidden;
+	}
+
+
+	.hotdeal_item img {
+		transition: all 0.15s linear;
+
+	}
+
+	.hotdeal_item:hover img {
+		transform: scale(1.09);
+		overflow: hidden;
+	}
+
+	.hotdeal_all {
+		margin: 20px 0 0 0;
+	}
+
+	.hotdeal_name {
+		width: 240px;
+		font-weight: bold;
+		font-size: 13pt;
+	}
+
+	.hotdeal_intro {
+		width: 280px;
+		font-size: 11pt;
+		margin: 5px 0 0 0;
+	}
+
+	.hotdeal_item img {
+		width: 280px;
+		height: 280px;
+
+	}
+
+	h2 {
+		width: 240px;
+		height: 60px;
+		margin: 0px 20px 10px 20px;
+		float: left;
+		position: absolute;
+		font-size: 30px;
+		z-index: 5;
+
+	}
+
+	.hotdeal_salelogo {
+		margin: 12px 0 0 0px;
+		font-weight: bold;
+		font-size: 11pt;
+		width: 90px;
+		position: absolute;
+
+	}
+
+	.hotdeal_trueprice {
+
+		position: absolute;
+		margin: 11px 0 0px 78px;
+		color: #BDBDBD;
+	}
+
+	.hotdeal_per {
+		position: absolute;
+		margin: 32px 0 0 0;
+		font-size: 15pt;
+		font-weight: bold;
+		color: #FF8000;
+	}
+
+	.hotdeal_realprice {
+		position: absolute;
+		margin: 32px 0 0 50px;
+		;
+		font-size: 15pt;
+		font-weight: bold;
+
+	}
+
+	.hotdeal_delivery {
+		position: absolute;
+		background: f6f6f6;
+		margin: 80px 0 0 0px;
+		color: #232323;
+		font-size: 12pt;
+		border: none;
+		border-radius: 5px;
+	}
+
+	/* 핫딜 타이머 */
+
+	.clock {
+		font-size: 1.2em;
+		font-weight: bold;
+		text-align: center;
+		color: white;
+		width: 135px;
+		height: 30px;
+		background: #C374FF;
+		color: white;
+		border-radius: 40px 40px;
+		position: absolute;
+		z-index: 1;
+		margin: 5px 5px;
+		display: inline-block;
+	}
+
+
+	/* aside 영역 */
+
+	aside {
+		width: 1200px;
+		height: 400px;
+		position: relative;
+		margin: 200px auto;
+
+	}
+
+	.aside_back {
+		width: 3000px;
+		height: 519px;
+		position: absolute;
+		display: center;
+		background: #f6f6f6;
+		top: 2030px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+	}
+
+	aside p {
+		font-size: 25pt;
+		font-weight: bold;
+		z-index: 3;
+
+	}
+
+	.today_intro2 {
+		font-size: 14pt;
+		color: #a1a1a1;
+		z-index: 3;
+
+	}
+
+
+	.today_back {
+		width: 1168px;
+		height: 316px;
+		background: white;
+		margin: 30px 0 0 40px;
+		position: absolute;
+
+	}
+
+	.today_image {
+		width: 548px;
+		height: 268px;
+		margin: 55px 0 0 65px;
+		background: #f6f6f6;
+		float: left;
+		position: absolute;
+	}
+
+	.today_image img {
+		width: 548px;
+		height: 268px;
+		transition: all 0.2s linear;
+	}
+
+
+	.today_image:hover img {
+		transform: scale(1.09);
+	}
+
+	.today_container {
+		width: 500px;
+		height: 300px;
+		margin: 45px 0 0 655px;
+		position: absolute;
+
+
+	}
+
+	.today_container ul {
+		width: 300px;
+		height: 90px;
+		position: absolute;
+		z-index: 3;
+
+	}
+
+	.today_container li {
+		z-index: 10;
+	}
+
+	.item_name {
+		width: 350px;
+		font-size: 16pt;
+		font-weight: 550;
+		margin: 30px 0 0 0;
+
+	}
+
+	.today_per {
+		margin: 5px 0 0 0;
+		font-size: 18pt;
+		font-weight: 550;
+		color: #FF8000;
+		position: absolute;
+
+	}
+
+	.today_realprice {
+		margin: 5px 0 0 60px;
+		position: absolute;
+		font-size: 18pt;
+		font-weight: bold;
+
+	}
+
+	.today_trueprice {
+		margin: 10px 0 0 165px;
+		position: absolute;
+
+	}
+
+	.today_deal {
+		background: blue;
+		width: 500px;
+		height: 50px;
+
+	}
+
+	.countdown {
+		width: 300px;
+		height: 50px;
+		margin: 40px 0 0 50px;
+		font-size: 25pt;
+		font-weight: bold;
+	}
+
+	.count_clock img {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		margin: 45px 0 0 0;
+
+	}
+
+	/* 상품 추천 영역 */
+	.rec_article {
+		width: 1200px;
+		height: 580px;
+		margin: 50px auto;
+		display: flex;
+
+	}
+
+	/* 브랜드 추천 영역 */
+	.brandrec_article {
+		width: 1200px;
+		height: 580px;
+		margin: 50px auto;
+		display: flex;
+
+	}
+
+	.tabs_container {
+		width: 500px;
+		margin: 50px 0 0 0px;
+	}
+
+	ul.tabs {
+		width: 1200px;
+		margin: 0 0 0 15px;
+		padding: 0px;
+		list-style: none;
+	}
+
+	ul.tabs li {
+		background: none;
+		margin-right: 6px;
+		color: #222;
+		display: inline-block;
+		padding: 10px 15px;
+		cursor: pointer;
+		border: 1px solid #666;
+		border-radius: 20px 20px 20px 20px;
+
+	}
+
+	ul.tabs li.current {
+		background: #ededed;
+		color: purple;
+		font-weight: bold;
+
+	}
+
+	.tab-content {
+		display: none;
+		position: absolute;
+	}
+
+	.tab-content.current {
+		display: inline-block;
+	}
+
+	/* footer 영역 */
+
+
+	footer {
+		width: 1200px;
+		height: 400px;
+		margin: 800px auto;
+		
+
+	}
+
+	.footlogo {
+
+		width: 150px;
+		height: 30px;
+
+	}
+
+	.footlogo img {
+		width: 100%;
+		height: 100%;
+
+	}
+
+	.footintro {
+
+		width: 1200px;
+		height: 60px;
+
+
+	}
+
+	.footintro2 {
+
+		width: 700px;
+		height: 150px;
+
+
+	}
+
+
+	.footintro li {
+		float: left;
+		margin: 0 10px 0 10px;
+		padding: 0;
+		line-height: 50px;
+		font-size: 10px;
+	}
+
+	.footintro li::after {
+		content: "|";
+		float: right;
+		display: block;
+		margin: 0 0px 0 10px;
+	}
+
+	.footintro li:last-child::after {
+		content: "";
+	}
+
+
+
+	.chatting {
+		padding: 10px 20px;
+		color: #fff;
+		text-decoration: none;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+
+
+	}
+
+	.chatting:hover {
+		background-color: #0056b3;
+	}
+
+	hr {
+		margin: 40px;
+
+	}
+
+	.bottomlogo {
+		width: 1200px;
+	}
+
+	.bottomlogo img {
+		width: 100%;
+	}

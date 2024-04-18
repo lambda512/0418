@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+
+#wrap {
+	width: 80%;
+	margin: 10px auto;
+}
+
+tbody>a {
+	font-size: 13pt;
+	border: solid black 2px;
+}
+
+.write button {
+	background-color: rgb(149, 35, 220);
+	/* Green */
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.home button {
+	background-color: #008CBA;
+	/* Blue */
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+
+h1 {
+	color: rgb(149, 35, 220);
+	position: absolute;
+	top: 13%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h2 {
+	color: rgb(149, 35, 220);
+}
+
+table {
+	width: 100% !important;
+}
+
+table {
+	width: 80%;
+	border-collapse: collapse;
+	font-size: 12px;
+	line-height: 24px;
+}
+
+table td,
+th {
+	border: #d3d3d3 solid 1px;
+	padding: 5px;
+}
+
+th {
+	background: rgb(166, 71, 227);
+	color: #ffff;
+}
+
+img {
+	width: 220px;
+	height: 300px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:HOVER {
+	text-decoration: underline;
+	color: green;
+}
